@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập từ:</label>
+<input type="text" id="string"/>
+<input type="button" onclick="trans()" value="Dịch"/>
+<p id="result"></p>
+</body>
+<script>
+    function trans(){
+  let eng=["red","yellow","orange","black","blue","green","white","pink"];
+  let vie=["đỏ","vàng","cam","đen","xanh","lục","trắng","hồng"];
+  let string=document.getElementById("string").value;
+  let result;
+  for(let i=0; i<eng.length; i++){
+    if(string==eng[i]) {
+        for (let j = 0; j < vie.length; j++) {
+            if (i == j) {
+                result = vie[j]
+            }
+        }
+    }
+    } document.getElementById("result").innerHTML=result
+  }
+</script>
+</html>
