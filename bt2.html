@@ -14,16 +14,16 @@
     function trans(){
   let eng=["red","yellow","orange","black","blue","green","white","pink"];
   let vie=["đỏ","vàng","cam","đen","xanh","lục","trắng","hồng"];
-  let string=document.getElementById("string").value;
-  let result;
-  for(let i=0; i<eng.length; i++){
-    if(string==eng[i]) {
-        for (let j = 0; j < vie.length; j++) {
-            if (i == j) {
-                result = vie[j]
+        let string=document.getElementById("string").value;
+        let result;
+        for(let i=0; i<eng.length; i++){
+            if(string==eng[i]) {
+                for (let j = 0; j < vie.length; j++) {
+                    if (i == j) {
+                        result = vie[j]
+                    }
+                }
             }
-        }
-    }
     } document.getElementById("result").innerHTML=result
   }
 </script>
